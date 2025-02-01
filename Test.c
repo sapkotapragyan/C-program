@@ -110,9 +110,9 @@ int main()
     }
     return 0;
 }
-*/
 
-/*
+
+
 1 1 1 1 1
 2 2 2 2
 3 3 3
@@ -133,9 +133,9 @@ int main()
         printf("\n");
     }
 }
-*/
 
-/*
+
+
 
 * * * * *
 * * * *
@@ -158,9 +158,9 @@ int main()
         printf("\n");
     }
 }
-*/
 
-/*
+
+
 1 2 3 4 5
 1 2 3 4 5
 1 2 3 4 5
@@ -239,7 +239,7 @@ int main()
     }
     return 0;
 }
-*/
+
 
 // Write a program to find the largest element in an array.
 // #include <stdio.h>
@@ -327,7 +327,7 @@ int main()
 		printf("%d\n",arr[i]);
 	}
 }
-*/
+
 
 //Let an array of size 20. Input any 10 elements and find total 
 //of even numbers and their average
@@ -559,6 +559,36 @@ int main()
     }
     return 0;
 }
+
+
+//Suppose we want to read a list of n floating point quantities and then calculate their average.
+In addition to simply calculating the average, however, we will also compute the deviation of each numerical 
+quantity about the average, using the formula d=xi-avg where  xi represents each of the given quantities i=1,2,…n and
+avg represents the calculated average.
+#include<stdio.h>
+int main()
+{
+    int i,n;
+    printf("How many floating points? ");
+    scanf("%d",&n);
+    float arr[n],avg,d;
+    for(i=0;i<n;i++)
+    {
+        printf("Enter a floating value %d: ",i+1);
+        scanf("%f",&arr[i]);
+    }
+    float sum=0.0;
+    for(i=0;i<n;i++)
+    {
+        sum+=arr[i];
+    }
+    avg=sum/n;
+    printf("Average: %.4f\n",avg);
+    for (i = 0; i < n; i++) 
+    {
+        d = arr[i] - avg;
+        printf("Deviation of element %d: %.4f\n", i + 1, d);
+    }
+    return 0;
+}
 */
-
-
